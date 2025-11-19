@@ -7,7 +7,9 @@ A page for tools and information on information security and cyber
 
 |  operator  | Syntax | Description |
 |------------|--------|--------------------------------------------------------------------|
-| filetype | **filetype:** *type* | Searches only for files of a specific type.
+| filetype | **filetype:** *type* | Searches only for files of a specific type. |
+| index of | **index of** */string* | Displays pages with directory browsing enabled, use with another operator. E.g., `"intitle:index of" passwd` will show dr listings containing passwd. |
+
 
 ### Sniffing and Evasion
 
