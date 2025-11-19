@@ -4,6 +4,7 @@ A page for tools and information on information security and cyber
 ## CEH Tools
 ### Scanning and Enumeration
 - https://www.exploit-db.com/google-hacking-database Google hacking database. Examples on how to manipulate search strings.
+
 |  operator  | Syntax | Description |
 |------------|--------|--------------------------------------------------------------------|
 | filetype | **filetype:** *type* | Searches only for files of a specific type.
