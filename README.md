@@ -1,8 +1,8 @@
 # tools_and_information
 A page for tools and information on information security and cyber
 
-## CEH Tools
-### Scanning and Enumeration
+# CEH Tools
+## Scanning and Enumeration
 - https://www.exploit-db.com/google-hacking-database Google hacking database. Examples on how to manipulate search strings.
 
 |  Operator  | Syntax | Description |
@@ -63,7 +63,7 @@ Next bits are for "Competitive intelligence"
 - LexisNexis
 - DB & Hoovers
 
-## TCP/IP Networking
+### TCP/IP Networking
 ### Flags
 SYN (*Synchronize*)
     This flag is set when establishing the communication, during which it negotiations parameters and sequence numbers.
@@ -82,34 +82,90 @@ PSH (*Push*)
 
 URG (*Urgent*)
     Signifies the data being sent is out of band, cancelling a message midstream for example.
-### Sniffing and Evasion
+
+### Packet Crafting tools
+- https://www.netscantools.com/nstbasicmain.html NetScanTools - Network tools such as DNS, IP/Hostname resolution, Who Am I, Ping (and graphical) Traceroute.
+- https://ostinato.org/ Ostinato - packet generator, generate, customise and replay L2/L3 traffic.
+- https://packeth.sourceforge.net/packeth/Home.html PackETH - An ethernet packet generator, GUI and CLI tool to send any possible packet or sequence.
+- https://candelatech.com/ LANforge FIRE - Looks like a whole suite of Network testing tools, including WiFi traffic generator.
+- https://www.colasoft.com/download/products/download_packet_builder.php Colasoft Packet Builder - packet builder allows HEX editing of RAW data and a decoding editor.
+
+### Ports
+- https://www.nirsoft.net/utils/cports.html CurrPorts - Network monitoring software to display open ports (TCP/IP & UDP) including things like what process opened it, time and user.
+
+- **Well-known Ports**  0-1023
+- **Registered Ports** 1024-49,151
+- **Dynamic Ports** 49,152-65,535 
+
+| Port Number | Protocol | Transport Protocol |
+|-------------|----------|--------------------|
+|**20/21**| *FTP* | TCP |
+|**22**| *SSH* | TPC |
+|**23** | *Telnet* | TCP |
+| **25**| *SMTP* | TCP |
+|**53**| *DNS* | TCP & UDP|
+|**67**| *DHCP* | UDP | 
+|**69**| *TFTP* | UDP |
+|**80**| *HTTP* | TCP |
+|**88**| *Kerberos* | TCP |
+|**110**| *POP3* | TCP |
+|**123**| *NTP* | UDP | 
+|**135**| *RPC* | TCP |
+|**137-139**| *NetBIOS* | TCP & UDP |
+|**143**| *IMAP* | TCP |
+|**161/162**| *SNMP* | UDP |
+|**179**| *BGP* | TCP |
+|**389**| *LDAP* | TCP & UDP |
+|**443**| *HTTPS* | TCP |
+|**445**| *SMB* | TCP |
+|**514**| * Syslog* | UDP |
+|**631**| * IPP* | TCP |
+|**500**| *IKE/VPN* | UDP |
+
+### Subnetting
+TBC 
+
+### ICMP
+ICMP message types. 
+
+| ICMP Message type | Description and important codes |
+|-------------------|---------------------------------|
+| 0: Echo Reply | Answer to a Type 8 Echo Request |
+| 3: Destination<br>Unreachable | Error message indicating the host or network cannot be reached. The codes are: <br>**0**-Destination network unreachable <br>**1**-Destination host unreachable <br>**6**-Network unknown <br>**7**-Host unknown <br>**9**-Network administratively prohibited <br>**10**-Host administratively prohibited <br>**13**-Communication administratively prohibited |
+| 4: Source Quench | A congestion control message |
+| 5: Redirect | Sent when there are two or more gateways available for the sender to use and the best route available to the destination is not the configured default gateway. Codes are: <br>0-Redirect datagram fro the network <br>1-Redirect datagram for the host |
+|8: Echo Request | A ping message requesting an Echo Reply |
+|11: Time exceeded | Message indicating that the packet took too long to be routed to the destination (code 0 is TTL expired) |
 
 
-### Attacking a System
+## Sniffing and Evasion
 
 
-### Web-based Hacking: Servers and apps
+## Attacking a System
 
 
-### Wireless Network Hacking
+## Web-based Hacking: Servers and apps
 
 
-### Mobile Communications and IoT
+## Wireless Network Hacking
 
 
-### Security in Cloud Computing
+## Mobile Communications and IoT
 
 
-### Trojans and Other Attacks
+## Security in Cloud Computing
 
 
-### Cryptography
+## Trojans and Other Attacks
 
 
-### Low tech: Social Eng and Physical Security
+## Cryptography
 
 
-### Artificial Intelligence for hacking
+## Low tech: Social Eng and Physical Security
 
 
-### Pentesting
+## Artificial Intelligence for hacking
+
+
+## Pentesting
