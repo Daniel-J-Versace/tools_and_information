@@ -23,7 +23,7 @@ A page for tools and information on information security and cyber
 - https://www.hashatit.com/ (seems to be down)
 - http://archive.org is the Wayback Machine URL
 
-Website Mirroring & Email footprinting
+### Website Mirroring & Email Footprinting
 - https://httrack.com HTTrack copies websites
 - https://softbytelabs.com/wp/blackwidow/ again copies websites
 - https://webripper.software.informer.com/2.0/ rips images and files from URLs
@@ -32,8 +32,11 @@ Website Mirroring & Email footprinting
 - https://github.com/Security-Tools-Alliance/Infoga email OSINT
 - https://politemail.com/ 
 - https://emailtracker.website/pro
+- Burp Suite
+- Firebug
+- Website informer
 
-DNS and Whois Footprinting
+### DNS and Whois Footprinting
 - https://www.iana.org/domains/root/servers Internet Assigned Numbers Authority and the Root Servers list.
 
 |  DNS Record Type | Label | Description |
@@ -47,16 +50,38 @@ DNS and Whois Footprinting
 | A | Address | Maps an IP to hostname.
 
 - https://whois.domaintools.com/ 
+- `nslookup` is used to query DNS servers for information.
+- `dig` test DNS queries and get results.
+
+### Network Footprinting
+- `traceroute` or `tracert` tracks packets across the net providing transit times and paths.
+
 
 Next bits are for "Competitive intelligence"
 - EDGAR DB (https://www.sec.gov/search-filings)
+- https://www.geeksforgeeks.org/linux-unix/osrframework-open-source-research-framework-on-linux/ 
 - LexisNexis
-DB & Hoovers
+- DB & Hoovers
 
+## TCP/IP Networking
+### Flags
+SYN (*Synchronize*)
+    This flag is set when establishing the communication, during which it negotiations parameters and sequence numbers.
 
+ACK (*Acknowledgement*)
+    Set as a response to SYN flags, will be set on all segments after the initial SYN flag.
 
+RST (*Reset*)
+    Forces termination of communications in both directions.
 
+FIN (*Finish*)
+    Orders a close to communications.
 
+PSH (*Push*)
+    Forces delivery of data without concern for buffering, so the device receiving doesn't need to wait for the buffer to fill up before it processes the data.
+
+URG (*Urgent*)
+    Signifies the data being sent is out of band, cancelling a message midstream for example.
 ### Sniffing and Evasion
 
 
